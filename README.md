@@ -13,6 +13,10 @@ model_p5_w1_9938_9470_6503.pth.tar - https://drive.google.com/file/d/1vVRfbA6ANq
 
 ## run:
 python3 src/main.py 2022-06-12_09-01-39_camera7.mp4 0.1
+(the last argument is detection threshold)
+the outputs:
+  - A text file, each row contains a json format: {frame_id:[[[x_tl,y_tl,x_br,y_br], score],...]}
+  - An output video `INPUT_NAME`_output.mp4 contains the face-blurred video
 
 ## Algorithm:
 Multi stages video analytic framework:
